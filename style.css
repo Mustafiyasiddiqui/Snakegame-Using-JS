@@ -11,13 +11,33 @@ body {
 }
 
 :root {
-    /* background colore */
-    --bg-primary-color: #0A0F0D;
+    /* Background */
+    --bg-primary-color: #F7DDE2;
+    /* soft sakura pink-white */
 
-    /* text colors */
-    --text-primary-color: #EEEEEE;
+    /* Text */
+    --text-primary-color: #4A4A4A;
+    /* soft dark grey for readability */
 
-    /*Spacing variables*/
+    /* Snake */
+    --snake-body-color: #FF5C8D;
+    /* bright sakura pink */
+    --snake-head-color: #FF2D6E;
+    /* deeper pink */
+
+    /* Food */
+    --food-color: #5A5AF4;
+    /* bright indigo for pop contrast */
+
+    /* Grid */
+    --border-primary-color: #f498b2;
+    /* pastel pink grid line */
+
+    /* Accents (buttons, highlights) */
+    --accent-color: #87F6FF;
+    /* aqua highlight */
+
+    /* Spacing */
     --space-xs: 0.25rem;
     --space-sm: 0.5rem;
     --space-md: 1rem;
@@ -25,23 +45,15 @@ body {
     --space-xl: 2rem;
     --space-2xl: 3rem;
     --space-3xl: 4rem;
-    /*Snake Body	#00FF9F (neon mint)
-Snake Head	#00FFC6
-Food	#FF006E (neon magenta)
-Grid Lines	rgba(0,255,159,0.12)*/
 
-
-    /*border color*/
-    --border-primary-color: rgba(0, 255, 159, 0.12);
-
-
-    /*border radius*/
-    --borrder-radius-sm: 4px;
-    --borrder-radius-md: 8px;
-    --borrder-radius-lg: 16px;
+    /* Border Radius */
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 16px;
     --border-radius-xl: 24px;
     --border-radius-2xl: 32px;
 }
+
 
 html {
     background-color: var(--bg-primary-color);
@@ -72,7 +84,7 @@ section .infos {
 .info {
     padding: var(--space-sm) var(--space-md);
     border: 2px solid var(--border-primary-color);
-    border-radius: var(--borrder-radius-md);
+    border-radius: var(--border-radius-md);
 }
 
 .board {
@@ -84,8 +96,14 @@ section .infos {
 }
 
 .block {
-    /* width: 20px;
-    height: 20px; */
     border: 1px solid var(--border-primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: rgba(15, 14, 14, 0.3);
+}
 
+.fill {
+    background-color: var(--snake-body-color);
 }
