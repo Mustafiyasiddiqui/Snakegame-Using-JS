@@ -73,7 +73,7 @@ A simple, responsive, and aesthetic **Snake Game** built using **HTML, CSS, and 
 1. Clone the repo:
 
 ```
-git clone <your-repository-url>
+git clone https://github.com/Mustafiyasiddiqui/Snakegame-Using-JS/tree/main
 ```
 
 2. Open project folder:
